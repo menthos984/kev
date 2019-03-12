@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Kevin } from '../kevin';
 
 @Component({
   selector: 'app-about',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
+  public kev: Kevin;
 
-  constructor() { }
+  constructor() {
+    this.kev = new Kevin();
+  }
 
   ngOnInit() {
   }
