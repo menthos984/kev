@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Kevin } from '../kevin';
 
 @Component({
   selector: 'app-footer',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-
-  constructor() { }
+  public kev: Kevin;
+  
+  constructor() {
+    this.kev = new Kevin();
+  }
 
   ngOnInit() {
   }
